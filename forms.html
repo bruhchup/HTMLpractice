@@ -1,21 +1,50 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Forms Demo</title>
 </head>
+
 <body>
     <h1>Forms Demo</h1>
+    <!--  This is a default button, its behavior is button  -->
+    <button>Not Submit</button>
+
+    <hr>
 
     <form action="/tacos">
-        <input type="text" placeholder="username">
-        <input type="password" placeholder="password">
-        <input type="color">
-        <input type="number" placeholder="enter number">
-        <input type="time">
-        <input type="button">
+        <p><label for="username">Enter a username:</label>
+            <input id="username" type="text" placeholder="username">
+        </p>
+        <p><label for="password">Enter a password:</label>
+            <input id="password" type="password" placeholder="password">
+        </p>
+        <p>
+            <label for="color">Enter a color</label>
+            <input id="color" type="color">
+        </p>
+        <p><label for="number">Enter a number:</label>
+            <input id="number" type="number" placeholder="enter number">
+        </p>
+        <!-- This is an alternative way to write the above input. Not very conventional, however -->
+        <p><label>
+                <input type="number" placeholder="enter number">
+                Enter a number:
+            </label>
+        </p>
+        <p><label for="time">Choose a time:</label>
+            <input id="time" type="time">
+        </p>
+        <!-- These buttons serve the same function. behavior is to submit the form. Because the first button is inside a form,
+        its default behavior is to submit -->
+        <button type="button">Submit</button>
+        <input type="submit" value="Click me">
+        <!-- This button behavior is different. Because it is passed with "button", the behavior is a normal button -->
+        <input type="button" value="Click me">
     </form>
 
 </body>
+
 </html>
