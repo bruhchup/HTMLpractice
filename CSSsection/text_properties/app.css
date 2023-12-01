@@ -1,7 +1,17 @@
 h1 {
     text-align: center;
+    font-weight: 400;
+    text-decoration: #f783df underline dotted 5px;
+    letter-spacing: 18px;
+    font-size: 80px;
+    font-family: fantasy;
+}
+
+a {
+    text-decoration: none;
 }
 
 p {
-    text-align: right;
+    text-align: left;
+    line-height: 2;
 }
