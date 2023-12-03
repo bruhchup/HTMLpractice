@@ -12,6 +12,13 @@ button {
 
 }
 
+input[type="text"] {
+    background-color: #1d3557;
+    color: white;
+    border-radius: 25px;
+}
+
+/*ID*/
 #signup {
     background-color: #1d3557;
     color: #f1faee
@@ -21,16 +28,87 @@ h1, h2{
     color: #1d3557;
 }
 
-.vote{
-    background-color: #a8dadc;
-}
-
+/*Class*/
 .tag{
     background-color: #e63946;
     color: #f1faee;
     font-size: 16px;
+    border-radius: 3px;
+}
+
+.tag:hover{
+    background-color: gray;
 }
 
 span {
     color: #457d9b
+}
+
+.post a {
+    color: #457d9b;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.post a:hover{
+    text-decoration: underline;
+}
+
+footer a {
+    color: #e63946;
+    text-decoration: none;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}
+
+/*Adjacent Selector + Attribute Selector*/
+h2 + input[type="button"] {
+    font-size: 20px;
+    background-color: #a8dadc;
+    border-radius: 13px;
+}
+
+/*Direct Child Selector*/
+footer > a {
+    color: #457d9b;
+    text-decoration: none;
+}
+
+footer > a:hover {
+    text-decoration: underline;
+}
+
+/*Attribute Selector*/
+a[href*="google"] {
+    color: #1d3557;
+}
+
+.post input[type="button"]:hover {
+    background-color: #e63946;
+    color: white
+}
+
+.post input[type="button"]:active {
+    background-color: #7e111a;
+    color: rgb(150, 150, 150)
+}
+
+/*pseudo classes*/
+a:hover{
+    text-decoration: underline;
+}
+
+.post:nth-of-type(2n){
+    background-color: #dfe8dc;
+}
+
+h2::selection {
+    color: black;
+    background-color: white;
+}
+
+h2::first-letter {
+    font-size: 35px;
 }
