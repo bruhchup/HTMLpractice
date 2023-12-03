@@ -8,32 +8,36 @@ body {
 
 button {
     font-size: 30px;
-    background-color: #a8dadc;
+    background-color: #9F956C;
 
 }
 
 input[type="text"] {
-    background-color: #1d3557;
+    background-color: #584D3D;
     color: white;
     border-radius: 25px;
 }
 
 /*ID*/
 #signup {
-    background-color: #1d3557;
+    background-color: #584D3D;
     color: #f1faee
 }
 
 h1, h2{
-    color: #1d3557;
+    color: #584D3D;
 }
 
 /*Class*/
 .tag{
-    background-color: #e63946;
+    background-color: #242019;
     color: #f1faee;
     font-size: 16px;
     border-radius: 3px;
+}
+
+.post:nth-of-type(2n) .tag{
+    color:#dfe8dc;
 }
 
 .tag:hover{
@@ -41,11 +45,11 @@ h1, h2{
 }
 
 span {
-    color: #457d9b
+    color: #3B3517
 }
 
 .post a {
-    color: #457d9b;
+    color: #3B3517;
     text-decoration: none;
     font-weight: bold;
 }
@@ -55,7 +59,7 @@ span {
 }
 
 footer a {
-    color: #e63946;
+    color: #242019;
     text-decoration: none;
 }
 
@@ -66,7 +70,7 @@ footer a:hover {
 /*Adjacent Selector + Attribute Selector*/
 h2 + input[type="button"] {
     font-size: 20px;
-    background-color: #a8dadc;
+    background-color: #F4E87C;
     border-radius: 13px;
 }
 
@@ -82,17 +86,7 @@ footer > a:hover {
 
 /*Attribute Selector*/
 a[href*="google"] {
-    color: #1d3557;
-}
-
-.post input[type="button"]:hover {
-    background-color: #e63946;
-    color: white
-}
-
-.post input[type="button"]:active {
-    background-color: #7e111a;
-    color: rgb(150, 150, 150)
+    color: #584D3D;
 }
 
 /*pseudo classes*/
@@ -112,3 +106,16 @@ h2::selection {
 h2::first-letter {
     font-size: 35px;
 }
+
+.post input[type="button"]:hover {
+    background-color: rgb(77, 48, 50);
+    color: white
+}
+
+.post input[type="button"]:active {
+    background-color: rgb(53, 7, 11);
+    color: white;
+}
+
+
+
