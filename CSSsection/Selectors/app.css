@@ -98,13 +98,13 @@ a:hover{
     background-color: #dfe8dc;
 }
 
-h2::selection {
-    color: black;
-    background-color: white;
-}
-
 h2::first-letter {
     font-size: 35px;
+}
+
+::selection {
+    color: black;
+    background-color: white;
 }
 
 .post input[type="button"]:hover {
@@ -116,6 +116,3 @@ h2::first-letter {
     background-color: rgb(53, 7, 11);
     color: white;
 }
-
-
-
